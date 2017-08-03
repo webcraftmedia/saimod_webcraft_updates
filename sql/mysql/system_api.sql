@@ -1,9 +1,2 @@
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5011, 42, 2, 5000, 'visible', 'visible', 'INT');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5010, 42, 2, 5000, 'visible', 'id', 'INT');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5008, 42, 2, 5000, 'del', 'id', 'INT');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5005, 42, 2, 5000, 'save', 'description', 'STRING');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5004, 42, 2, 5000, 'save', 'version', 'INT');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5003, 42, 2, 5000, 'save', 'url', 'STRING');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5002, 42, 2, 5000, 'save', 'name', 'STRING');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5001, 42, 2, 5000, 'save', 'id', 'INT');
-REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (5000, 42, 0, 0, '_SAI_saimod_mojotrollz_vote', 'action', NULL);
+REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (6000, 42, 3, 0, '_SAI_saimod_webcraft_updates', 'update', 'STRING');
+REPLACE INTO `system_api` (`ID`, `group`, `type`, `parentID`, `parentValue`, `name`, `verify`) VALUES (6001, 42, 3, 0, '_SAI_saimod_webcraft_updates', 'project', 'STRING');

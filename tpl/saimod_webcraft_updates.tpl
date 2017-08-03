@@ -20,40 +20,7 @@
             </tr>
             ${updates}
         </table>
-        <hr>
-        <h4 style="word-break: break-all;">Commits of Update ${update}</h4>
-        <table style="width: 100%;" class="sai_table">
-            <tr>
-                <th>time</th>
-                <th>author</th>
-                <th>log</th>
-                <th>commit</th>
-            </tr>
-            ${update_commits}
-        </table>
-        <hr>
-        <h4 style="word-break: break-all;">Projects of Update ${update}</h4>
-        <table style="width: 100%;" class="sai_table">
-            <tr>
-                <th>time</th>
-                <!--<th>update</th>-->
-                <th>path</th>
-                <th>git</th>
-                <!--<th>commit</th>-->
-                <!--<th>commit_last</th>-->
-            </tr>
-            ${projects}
-        </table>
-        <hr>
-        <h4 style="word-break: break-all;">Commits of Project ${project}</h4>
-        <table style="width: 100%;" class="sai_table">
-            <tr>
-                <th>time</th>
-                <th>author</th>
-                <th>log</th>
-                <th>commit</th>
-            </tr>
-            ${commits}
-        </table>
+        ${projects}
+        ${commits}
     </div>
 </div>
