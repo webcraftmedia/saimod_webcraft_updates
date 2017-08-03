@@ -1,0 +1,1 @@
+REPLACE INTO `system_page` (`id`, `group`, `name`, `state`, `parent_id`, `login`, `type`, `div`, `url`, `func`, `php_class`) VALUES (600, 42, 'updates', 'updates', -1, 0, 0, '#content', './sai.php?sai_mod=.SAI.saimod_webcraft_updates', 'init_saimod_webcraft_updates', '\\SAI\\saimod_webcraft_updates');
