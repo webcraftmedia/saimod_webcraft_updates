@@ -5,7 +5,7 @@ class saimod_webcraft_updates extends \SYSTEM\SAI\sai_module {
         $vars = array('updates' => '', 'projects' => '', 'commits' => '', 'error' => '');
         $token = \SYSTEM\CONFIG\config::get(\config_ids::WEBCRAFT_BILLING_TOKEN);
         
-        $updates = json_decode(file_get_contents('https://wat.webcraft-media.de/api.php?call=updates&action=updates&token='.$token),true);
+        $updates = json_decode(file_get_contents('http://wat.webcraft-media.de/api.php?call=updates&action=updates&token='.$token),true);
         if($updates['status']){
             foreach($updates['result'] as $row){
                 $row['time'] = \SYSTEM\time::time_ago_string(strtotime($row['time']));
@@ -15,7 +15,7 @@ class saimod_webcraft_updates extends \SYSTEM\SAI\sai_module {
             $vars['error'] .= 'Error: '.$updates['result']['message'].'<br>';}
         
         if($update){
-            $projects = json_decode(file_get_contents('https://wat.webcraft-media.de/api.php?call=updates&action=projects'.'&update='.$update.'&token='.$token),true);
+            $projects = json_decode(file_get_contents('http://wat.webcraft-media.de/api.php?call=updates&action=projects'.'&update='.$update.'&token='.$token),true);
             if($projects['status']){
                 $vars2 = array('project' => '', 'update' => $update);
                 foreach($projects['result'] as $row){
@@ -27,7 +27,7 @@ class saimod_webcraft_updates extends \SYSTEM\SAI\sai_module {
         }
         
         if($project){
-            $commits = json_decode(file_get_contents('https://wat.webcraft-media.de/api.php?call=updates&action=commits'.'&token='.$token.'&update='.$update.'&project='.$project),true);
+            $commits = json_decode(file_get_contents('http://wat.webcraft-media.de/api.php?call=updates&action=commits'.'&token='.$token.'&update='.$update.'&project='.$project),true);
             if($commits['status']){
                 $vars3 = array('commit' => '', 'project' => $project);
                 foreach($commits['result'] as $row){
